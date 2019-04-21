@@ -1,0 +1,114 @@
+level = 1
+HP = 10
+money = 10
+
+
+##dailytask1=dailytasks(name = "Drink 2 bottles of water!", reward=2, penalty=2)
+
+def main():
+    print 'Your level is ' + str(level) + '\nYour health is ' + str(HP) \
+        + '\nYou have $' + str(money)
+    userinput = \
+        input('What would you like to do? Type I to check inventory, S to go to\nthe store, or D to mark a daily as done. Type E to exit.'
+              )
+    if userinput == 'I' or userinput == 'i':
+        print 'Inventory'
+    elif userinput == 'E' or userinput == 'e':
+        exit
+    elif userinput == 'S' or userinput == 's':
+        print 'Store'
+    elif userinput == 'D' or userinput == 'd':
+        print 'Dailies'
+    else:
+        print 'Invalid input try again! It should be I, S, D or E to exit.'
+
+
+if __name__ == '__main__':
+    main()
+
+
+class dailytasks:
+
+    def __init__(
+        self,
+        name,
+        desc,
+        reward,
+        penalty,
+        complete,
+        ):
+
+        self.name = name
+        self.desc = desc
+        self.reward = reward
+        self.penalty = penalty
+        self.complete = false
+
+    def markdone(self, money, level):
+        self.complete = true
+        money += self.reward
+        level += self.reward
+        return 'Congrats! You earned ' + self.reward \
+            + ' dollars, and gained ' + self.reward + 'levels!'
+
+    def penalty(self, HP):
+        HP -= self.penalty
+        return 'You took damage!'
+
+
+##class store():
+
+class inventory:
+
+    def __init__(
+        self,
+        name,
+        desc,
+        price,
+        owned,
+        ):
+
+        self.name = name
+        self.desc = desc
+        self.price = price
+        self.owned = owned
+
+    def add(self, amount):  # #used to add item to inventory
+        self.numberowned += amount
+
+    def use(self, amount):
+        self.numberowned -= amount
+        self.potioneffect(HP, amount)
+
+    def potioneffect(HP, amount):
+        HP += amount
+        return 'You used the potion and healed!'
+
+
+class item:
+
+    def __init__(
+        self,
+        name,
+        desc,
+        price,
+        effect,
+        owned,
+        ):
+
+        self.name = name
+        self.desc = desc
+        self.price = price
+        self.effect = effect()
+        self.owned = owned
+
+    def add(self, amount):
+        self.owned += amount
+
+    def use(self, amount):
+        self.owned -= amount
+
+
+if __name__ == '__main__':
+    main()
+
