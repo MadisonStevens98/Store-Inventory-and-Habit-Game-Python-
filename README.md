@@ -1,3 +1,14 @@
 # pythonfinalproject
 my final for my intro to python class
-right now it just displays the menu and has some of the classes outlined. It exits when you hit e, and I S or D will show you Inventory, Store, and Daily tasks. Right now it doesn't actually carry out those tasks just prints "Store" or "Inventory". Some of the classes have been outlined but not ready to implement into the current program yet.
+
+The goal of this project was to create a sort of game that rewards the player for doing real world tasks or habits
+
+Currently the project has a Main menu from which you can do a few things, go to the store, check your inventory, manage your daily tasks, or exit. It asks for the user to type what they want to do.
+
+If c is typed then the player can create a new task to add to their list of to dos
+if s is typed the player goes to a store where they can buy items (only item is a potion) if they hav the money
+if i is typed the player sees their inventory, and can choose to use any items they have
+if d is typed the player can mark their daily task done
+if e is typed all changed variables are saved to txt files and program is exited
+
+IN ORDER TO SAVE YOUR PROGRESS YOU MUST TYPE E TO EXIT!!!
