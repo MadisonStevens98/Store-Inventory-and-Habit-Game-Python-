@@ -1,5 +1,6 @@
 #Store, Inventory, and Habit Game
-Practice Project or learnign purposes
+
+Practice Project for learning purposes
 
 The goal of this project was to create a sort of game that rewards the player for doing real world tasks or habits
 
