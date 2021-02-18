@@ -1,5 +1,5 @@
 # pythonfinalproject
-my final for my intro to python class
+Practice Project or learnign purposes
 
 The goal of this project was to create a sort of game that rewards the player for doing real world tasks or habits
 
