@@ -6,6 +6,13 @@ The goal of this project was to create a sort of game that rewards the player fo
 
 Currently the project has a Main menu from which you can do a few things, go to the store, check your inventory, manage your daily tasks, or exit. It asks for the user to type what they want to do.
 
+
+
+TO RUN: download HabitGame.py plus all the txt files. Place all the files in the same folder, then run the .py file.
+
+
+HOW TO USE/PLAY:
+
 If c is typed then the player can create a new task to add to their list of to dos
 if s is typed the player goes to a store where they can buy items (only item is a potion) if they have the money
 if i is typed the player sees their inventory, and can choose to use any items they have
